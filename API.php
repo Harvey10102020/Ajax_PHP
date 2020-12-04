@@ -1,7 +1,7 @@
 <?php
 
 header("Access-Control-Allow-Origin: *");
-var_dump($_GET["datos_personales"]);
+var_dump($_POST["datos_personales"]);
 
 
 

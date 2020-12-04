@@ -16,7 +16,7 @@ $(document).ready(function() {
             url: "https://pruebacofenalco.000webhostapp.com/Ajax_API/API.php",
             data: { datos_ },
             success: function(response) {
-                document.getElementById("Respuesta").innerHTML = "Los datos enviados fueron: " + datos_;;
+                document.getElementById("Respuesta").innerHTML = "Los datos enviados fueron: " + response;;
             }
         });
 
