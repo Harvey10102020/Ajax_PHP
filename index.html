@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="sp">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js"></script>
+    <title>API POST</title>
+</head>
+
+<body>
+    <form>
+        <label for="nombre">Campo 1</label><br>
+        <input type="text" id="nombre" tabindex="1"><br>
+        <label for="apellido">Campo 2</label><br>
+        <input type="text" id="apellido" tabindex="2"><br>
+        <label for="edad">Campo 3</label><br>
+        <input type="text" id="edad" tabindex="3"><br>
+        <button type="button" id="enviar_datos">Enviar</button>
+        <div id="Respuesta"></div>
+    </form><br>
+</body>
+<script>
+    $(document).ready(function() {
+        $('input').keydown(function(event) { //event==Keyevent
+            if (event.which == 13) {
+                var inputs = $(this).closest('form').find(':input:visible');
+                inputs.eq(inputs.index(this) + 1).focus();
+                event.preventDefault(); //Disable standard Enterkey action
+            }
+            // event.preventDefault(); <- Disable all keys  action
+        });
+        $('button').keydown(function(event) { //event==Keyevent
+            if (event.which == 13) {
+                var inputs = $(this).closest('form').find(':input:visible');
+                inputs.eq(inputs.index(this) + 1).focus();
+                event.preventDefault(); //Disable standard Enterkey action
+            }
+            // event.preventDefault(); <- Disable all keys  action
+        });
+    });
+
+    $(document).ready(function() {
+        $('input').keydown(function(event) { //event==Keyevent
+            if (event.which == 38) {
+                var inputs = $(this).closest('form').find(':input:visible');
+                inputs.eq(inputs.index(this) - 1).focus();
+                event.preventDefault(); //Disable standard Enterkey action
+            }
+            // event.preventDefault(); <- Disable all keys  action
+        });
+        $('button').keydown(function(event) { //event==Keyevent
+            if (event.which == 38) {
+                var inputs = $(this).closest('form').find(':input:visible');
+                inputs.eq(inputs.index(this) - 1).focus();
+                event.preventDefault(); //Disable standard Enterkey action
+            }
+            // event.preventDefault(); <- Disable all keys  action
+        });
+    });
+    $(document).ready(function() {
+        $('input').keydown(function(event) { //event==Keyevent
+            if (event.which == 40) {
+                var inputs = $(this).closest('form').find(':input:visible');
+                inputs.eq(inputs.index(this) + 1).focus();
+                event.preventDefault(); //Disable standard Enterkey action
+            }
+            // event.preventDefault(); <- Disable all keys  action
+        });
+        $('button').keydown(function(event) { //event==Keyevent
+            if (event.which == 40) {
+                var inputs = $(this).closest('form').find(':input:visible');
+                inputs.eq(inputs.index(this) + 1).focus();
+                event.preventDefault(); //Disable standard Enterkey action
+            }
+            // event.preventDefault(); <- Disable all keys  action
+        });
+    });
+    $(document).ready(function() {
+        $('input').keydown(function(event) { //event==Keyevent
+            if (event.which == 37) {
+                var inputs = $(this).closest('form').find(':input:visible');
+                inputs.eq(inputs.index(this) - 1).focus();
+                event.preventDefault(); //Disable standard Enterkey action
+            }
+            // event.preventDefault(); <- Disable all keys  action
+        });
+        $('button').keydown(function(event) { //event==Keyevent
+            if (event.which == 37) {
+                var inputs = $(this).closest('form').find(':input:visible');
+                inputs.eq(inputs.index(this) - 1).focus();
+                event.preventDefault(); //Disable standard Enterkey action
+            }
+            // event.preventDefault(); <- Disable all keys  action
+        });
+    });
+    $(document).ready(function() {
+        $('input').keydown(function(event) { //event==Keyevent
+            if (event.which == 39) {
+                var inputs = $(this).closest('form').find(':input:visible');
+                inputs.eq(inputs.index(this) + 1).focus();
+                event.preventDefault(); //Disable standard Enterkey action
+            }
+            // event.preventDefault(); <- Disable all keys  action
+        });
+        $('button').keydown(function(event) { //event==Keyevent
+            if (event.which == 39) {
+                var inputs = $(this).closest('form').find(':input:visible');
+                inputs.eq(inputs.index(this) + 1).focus();
+                event.preventDefault(); //Disable standard Enterkey action
+            }
+            // event.preventDefault(); <- Disable all keys  action
+        });
+    });
+</script>
+
+
+
+
+
+</html>
